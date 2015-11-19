@@ -1,7 +1,7 @@
     <div class="col-sm-6 col-md-4">
         <a href="<?= \Yii::$app->getUrlManager()->createUrl(['listing/view', 'id'=>$model->listing_id]) ?>" class="thumbnail listing-thumb">
             <span class="label label-success push-left">FOR SALE</span>
-            <img src="holder.js/360x200">
+            <img data-src="holder.js/360x200">
             <div class="caption">
                 <h3><?= substr($model->getPrintAttr('description'), 0, 50) ?></h3>
                 <div class="listing-thumb-info text-center">

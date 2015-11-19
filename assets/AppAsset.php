@@ -22,6 +22,7 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'js/holder.min.js',
+        'http://maps.googleapis.com/maps/api/js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

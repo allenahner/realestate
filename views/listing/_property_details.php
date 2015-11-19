@@ -29,6 +29,6 @@
     <h3 class="listing-info-value"><?= $model->getPrintAttr('listing_num') ?></h3>
 </div>
 <div class="col-lg-8 col-sm-12 listing-details">
-    <img class="img-responsive img-thumbnail" src="holder.js/730x400">
+    <img class="img-responsive img-thumbnail" data-src="holder.js/730x400">
 </div>
 </div>
