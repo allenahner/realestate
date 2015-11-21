@@ -1,5 +1,7 @@
 <?php
-$this->registerJsFile('/js/map.js', ['position' => yii\web\View::POS_END, 'depends' => ['\app\assets\AppAsset']]);
+namespace yii\web;
+
+$this->registerJsFile('/js/map.js', ['position' => View::POS_END, 'depends' => ['\app\assets\AppAsset']]);
 $this->registerJs('
 
 
@@ -15,7 +17,7 @@ $("#direction-form") . submit(function () {
     var location = $("#inputSearch") . val();
     getDirections(location);
     return false;
-});', yii\web\View::POS_READY);
+});', View::POS_READY);
 ?>
 <style>
     #inputSearch {
